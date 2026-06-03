@@ -4,28 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yuelong Xiao | Guangxi University</title>
-    <meta name="description" content="Academic homepage of Yuelong Xiao (肖粤龙), Assistant Professor at School of Forestry, Guangxi University. Research: forest parameter mapping, ecological remote sensing, LiDAR." />
-    <meta name="keywords" content="Yuelong Xiao, 肖粤龙, Guangxi University, forest remote sensing, LiDAR, canopy height, GEDI, ICESat-2" />
+    <meta name="description" content="Academic homepage of Yuelong Xiao (&#32918;&#26376;&#40857;), Assistant Professor at the School of Forestry, Guangxi University. Research interests include forest parameter mapping, ecological remote sensing, LiDAR, and large-scale forest monitoring." />
+    <meta name="keywords" content="Yuelong Xiao, &#32918;&#26376;&#40857;, Guangxi University, forest remote sensing, LiDAR, canopy height, GEDI, ICESat-2" />
     <meta name="author" content="Yuelong Xiao" />
     <link rel="canonical" href="https://yuelongx1.github.io/" />
+
     <meta property="og:title" content="Yuelong Xiao | Guangxi University" />
-    <meta property="og:description" content="Assistant Professor at School of Forestry, Guangxi University. Research on forest parameter mapping and ecological remote sensing." />
+    <meta property="og:description" content="Assistant Professor at the School of Forestry, Guangxi University. Research on forest parameter mapping and ecological remote sensing." />
     <meta property="og:url" content="https://yuelongx1.github.io/" />
     <meta property="og:type" content="profile" />
     <meta name="twitter:card" content="summary" />
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Yuelong Xiao",
-        "alternateName": "肖粤龙",
+        "alternateName": "\u8096\u6708\u9f99",
         "affiliation": {
             "@type": "Organization",
             "name": "School of Forestry, Guangxi University",
             "url": "https://lxy.gxu.edu.cn/"
         },
         "jobTitle": "Assistant Professor",
-        "email": "yuelong_x@126.com",
+        "email": "mailto:yuelong_x@126.com",
         "url": "https://yuelongx1.github.io/",
         "sameAs": [
             "https://github.com/YuelongX1",
@@ -33,155 +35,116 @@
         ]
     }
     </script>
+
     <style>
+        :root {
+            color-scheme: light;
+            --text: #1f2933;
+            --muted: #5f6b7a;
+            --subtle: #d9e0e8;
+            --link: #1262a3;
+            --link-hover: #0b4778;
+            --surface: #ffffff;
+            --soft: #f6f8fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            max-width: 900px;
-            margin: 40px auto 60px;
-            padding: 0 30px;
-            color: #1a1a1a;
-            background: #fff;
-            line-height: 1.65;
+            margin: 0;
+            color: var(--text);
+            background: var(--surface);
+            font-family: Georgia, "Times New Roman", Times, serif;
             font-size: 16px;
+            line-height: 1.68;
         }
-        h1 { font-size: 1.8em; margin-bottom: 0.1em; }
+
+        main {
+            width: min(900px, calc(100% - 48px));
+            margin: 42px auto 58px;
+        }
+
+        header {
+            margin-bottom: 1.6rem;
+        }
+
+        h1 {
+            margin: 0 0 0.1em;
+            font-size: clamp(2rem, 4vw, 2.45rem);
+            line-height: 1.15;
+            font-weight: 700;
+        }
+
         h2 {
-            font-size: 1.3em;
-            margin: 1.8em 0 0.6em;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 4px;
+            margin: 2rem 0 0.7rem;
+            padding-bottom: 0.28rem;
+            border-bottom: 1px solid var(--subtle);
+            font-size: 1.35rem;
+            line-height: 1.25;
         }
-        h3 { font-size: 1.05em; margin: 1.2em 0 0.3em; }
-        p { margin: 0.6em 0; }
-        a { color: #1a56db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+
+        p {
+            margin: 0.65rem 0;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+            text-underline-offset: 0.15em;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 0.6rem 0;
+            padding-left: 1.4rem;
+        }
+
+        li {
+            margin-bottom: 0.38rem;
+        }
 
         .subtitle {
-            font-size: 0.95em;
-            color: #555;
-            margin: 0.2em 0 0.3em;
+            margin: 0.2rem 0 0.15rem;
+            color: var(--muted);
+            font-size: 1.05rem;
         }
+
         .affiliation {
-            font-size: 0.92em;
-            color: #666;
-            margin-bottom: 0.8em;
+            margin-bottom: 0.85rem;
+            color: var(--muted);
+            font-size: 0.96rem;
         }
+
         .links {
-            margin: 0.8em 0 1.2em;
-            font-size: 0.92em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 1rem;
+            margin: 0.9rem 0 1.25rem;
+            font-size: 0.95rem;
         }
-        .links a { margin-right: 14px; }
 
-        ul { margin: 0.5em 0; padding-left: 1.5em; }
-        li { margin-bottom: 0.3em; }
-
-        .pub { margin: 0.9em 0; }
-        .pub .authors { font-size: 0.93em; }
-        .pub .journal-info { font-size: 0.9em; color: #555; }
-
-        .contact-line { margin: 0.4em 0; font-size: 0.95em; }
-
-        hr { border: none; border-top: 1px solid #eee; margin: 30px 0 10px; }
-
-        @media (max-width: 600px) {
-            body { padding: 0 18px; margin: 24px auto; font-size: 15px; }
+        .pub {
+            margin: 0.95rem 0;
         }
-    </style>
-</head>
-<body>
 
-    <h1>Yuelong Xiao</h1>
-    <div class="subtitle">肖粤龙</div>
-    <div class="affiliation">
-        Assistant Professor &middot; School of Forestry, Guangxi University &middot; Nanning, China
-    </div>
-    <div class="links">
-        <a href="mailto:yuelong_x@126.com">Email</a>
-        <a href="https://prof.gxu.edu.cn/teacherDetails/017db446-277a-42e1-8a14-b009c3de4800" target="_blank">GXU Profile</a>
-        <a href="#" target="_blank">Google Scholar</a>
-        <a href="https://github.com/YuelongX1" target="_blank">GitHub</a>
-        <a href="#" target="_blank">ORCID</a>
-        <a href="#" target="_blank">ResearchGate</a>
-    </div>
+        .journal-info {
+            color: var(--text);
+            font-size: 0.96rem;
+        }
 
-    <!-- ===== About ===== -->
-    <h2>About Me</h2>
-    <p>
-        I am an Assistant Professor at the <a href="https://lxy.gxu.edu.cn/" target="_blank">School of Forestry, Guangxi University</a>. 
-        My research focuses on forest parameter mapping and ecological remote sensing, leveraging spaceborne LiDAR 
-        (GEDI, ICESat-2), multispectral/SAR satellite imagery (Sentinel-1/2, Landsat), and deep learning / machine 
-        learning methods to enable large-scale, high spatiotemporal resolution monitoring of forest structural parameters 
-        (canopy height, forest type, biomass, etc.).
-    </p>
+        .note {
+            margin-top: 1.1rem;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
 
-    <!-- ===== Research Interests ===== -->
-    <h2>Research Interests</h2>
-    <ul>
-        <li><strong>Forest Canopy Height Mapping</strong> — Spaceborne LiDAR (GEDI / ICESat-2) + Sentinel multispectral/SAR + deep learning for 10 m resolution canopy height retrieval.</li>
-        <li><strong>Temporal Dynamics Monitoring</strong> — Spatiotemporal modeling using Sentinel-2 time series (NDVI trajectories, phenological metrics) for inter-annual forest change detection.</li>
-        <li><strong>LiDAR Accuracy in Complex Terrain</strong> — Evaluating GEDI/ICESat-2 retrieval accuracy in karst landforms; optimizing slope filtering and terrain correction.</li>
-        <li><strong>Carbon Stock Estimation</strong> — Converting canopy height to aboveground biomass (AGB) for regional carbon budget assessment.</li>
-        <li><strong>Spatiotemporal Deep Learning</strong> — 3D CNN, ConvLSTM, Temporal Attention for remote sensing time-series modeling.</li>
-        <li><strong>Multi-Source Remote Sensing Fusion</strong> — Complementary use of GEDI and ICESat-2 for extended temporal coverage.</li>
-    </ul>
-
-    <!-- ===== Publications ===== -->
-    <h2>Publications</h2>
-
-    <div class="pub">
-        <div class="journal-info">Xi, H., Wang, Q., <strong>Xiao, Y.</strong>, Guo, Z., Tong, X., &amp; Atkinson, P. M. (2026). <a href="https://doi.org/10.1016/j.jag.2026.105211" target="_blank">Widespread biophysical cooling effects due to post-fire greening</a>. <em>International Journal of Applied Earth Observation and Geoinformation</em>.
-        </div>
-    </div>
-
-    <div class="pub">
-        <div class="journal-info"><strong>Xiao, Y.</strong>, Wang, Q.*, Xi, H., &amp; Tong, X. (2025). <a href="https://doi.org/10.1109/tgrs.2025.3572524" target="_blank">A 30 m canopy height map in China created by fusion of multiple relative height metrics</a>. <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 63, 1–16.
-        </div>
-    </div>
-
-    <div class="pub">
-        <div class="journal-info"><strong>Xiao, Y.</strong>, Wang, Q.*, &amp; Zhang, H. K. (2024). <a href="https://doi.org/10.34133/remotesensing.0204" target="_blank">Global Natural and Planted Forests Mapping at Fine Spatial Resolution of 30 m</a>. <em>Journal of Remote Sensing</em>, 4, 0204.
-        </div>
-    </div>
-
-    <div class="pub">
-        <div class="journal-info">Xi, H., <strong>Xiao, Y.</strong>*, &amp; Chen, H. (2024). <a href="https://doi.org/10.1117/12.3035685" target="_blank">Estimating the spatiotemporal pattern of river dissolved organic carbon based on multisource remote sensing data</a>. <em>5th International Conference on Geology, Mapping, and Remote Sensing (ICGMRS)</em>, 132232I.
-        </div>
-    </div>
-
-    <div class="pub">
-        <div class="journal-info"><strong>Xiao, Y.</strong>, Wang, Q.*, Tong, X., et al. (2023). <a href="https://doi.org/10.5194/essd-15-3365-2023" target="_blank">Thirty-meter map of young forest age in China</a>. <em>Earth System Science Data</em>, 15(8), 3365–3386.
-        </div>
-    </div>
-
-    <div class="pub">
-        <div class="journal-info">Wu, W.#, Miao, Z.*#, <strong>Xiao, Y.</strong>#, et al. (2020). <a href="https://doi.org/10.1109/jstars.2020.3027507" target="_blank">New scheme for impervious surface area mapping from SAR images with auxiliary user-generated content</a>. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, 13, 5954–5970.
-        </div>
-    </div>
-
-    <div class="pub">
-        <div class="journal-info">Miao, Z., <strong>Xiao, Y.</strong>*, Shi, W., et al. (2019). <a href="https://doi.org/10.1109/jstars.2019.2903585" target="_blank">Integration of Satellite Images and Open Data for Impervious Surface Classification</a>. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, 12(4), 1120–1133.
-        </div>
-    </div>
-
-    <div class="pub">
-        <div class="journal-info">Miao, Z., Xiao, Y., Shi, W., et al. (2019). <a href="https://doi.org/10.1109/multi-temp.2019.8866978" target="_blank">Synergy of Satellite Image and Volunteered Geographic Information to Change Analysis of Impervious Surface</a>. <em>10th International Workshop on the Analysis of Multitemporal Remote Sensing Images (MultiTemp)</em>, IEEE, 1–5.
-        </div>
-    </div>
-
-    <p style="margin-top:1em; font-size:0.92em; color:#666;">
-        <em>Please visit my <a href="#" target="_blank">Google Scholar</a> for the complete publication list.</em>
-    </p>
-
-    <!-- ===== Contact ===== -->
-    <h2>Contact</h2>
-    <div class="contact-line"><strong>Email:</strong> <a href="mailto:yuelong_x@126.com">yuelong_x@126.com</a></div>
-    <div class="contact-line"><strong>Address:</strong> School of Forestry, Guangxi University, Nanning 530004, Guangxi, China</div>
-    <div class="contact-line"><strong>GitHub:</strong> <a href="https://github.com/YuelongX1">github.com/YuelongX1</a></div>
-
-    <hr />
-    <p style="font-size:0.85em; color:#999; text-align:center;">
-        &copy; 2026 Yuelong Xiao &middot; Last updated: 2026-05
-    </p>
-
-</body>
-</html>
+        .contact-line {
+            margin: 0.42rem 0;
+            font-size: 0.95rem;
